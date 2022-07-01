@@ -13,7 +13,10 @@
 6. Как выглядит команда запуска `playbook`, если переменные зашифрованы?
 `ansible-playbook -i inventory/prod.yml site.yml --ask-vault-pass`
 7. Как называется модуль подключения к host на windows?
-`psrp`
+```
+psrp                           Run tasks over Microsoft PowerShell Remoting Protocol
+winrm                          Run tasks over Microsoft's WinRM
+```
 8. Приведите полный текст команды для поиска информации в документации ansible для модуля подключений ssh
 `ansible-doc -t connection ssh`
 9. Какой параметр из модуля подключения `ssh` необходим для того, чтобы определить пользователя, под которым необходимо совершать подключение?
